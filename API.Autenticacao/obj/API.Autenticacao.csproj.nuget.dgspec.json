@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {}
+    "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {}
   },
   "projects": {
-    "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {
+    "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
+        "projectUniqueName": "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
         "projectName": "API.Autenticacao",
-        "projectPath": "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
+        "projectPath": "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
         "packagesPath": "C:\\Users\\cdsso\\.nuget\\packages\\",
-        "outputPath": "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\obj\\",
+        "outputPath": "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -74,6 +74,14 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "NetDevPack.Security.JwtSigningCredentials.AspNetCore": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[1.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

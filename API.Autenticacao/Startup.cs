@@ -1,19 +1,13 @@
 using API.Autenticacao.EF;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using NetDevPack.Security.JwtSigningCredentials.AspNetCore;
 
 namespace API.Autenticacao
 {
@@ -36,6 +30,9 @@ namespace API.Autenticacao
             {
                 options.UseInMemoryDatabase("AutenticacaoApi");
             });
+            services.AddMemoryCache();
+            services.AddJwksManager()
+                    .PersistKeysToDatabaseStore<AutenticacaoContexto>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API.Autenticacao", Version = "v1" });
@@ -56,6 +53,7 @@ namespace API.Autenticacao
 
             app.UseRouting();
 
+            app.UseJwksDiscovery();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -40,3 +40,6 @@ D:\Eventos\CapiConfAPI\API.Autenticacao\obj\Debug\net5.0\API.Autenticacao.dll
 D:\Eventos\CapiConfAPI\API.Autenticacao\obj\Debug\net5.0\ref\API.Autenticacao.dll
 D:\Eventos\CapiConfAPI\API.Autenticacao\obj\Debug\net5.0\API.Autenticacao.pdb
 D:\Eventos\CapiConfAPI\API.Autenticacao\obj\Debug\net5.0\API.Autenticacao.genruntimeconfig.cache
+D:\eventos\CapiConfAPI\API.Autenticacao\bin\Debug\net5.0\NetDevPack.Security.JwtSigningCredentials.dll
+D:\eventos\CapiConfAPI\API.Autenticacao\bin\Debug\net5.0\NetDevPack.Security.JwtSigningCredentials.AspNetCore.dll
+D:\eventos\CapiConfAPI\API.Autenticacao\bin\Debug\net5.0\NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore.dll

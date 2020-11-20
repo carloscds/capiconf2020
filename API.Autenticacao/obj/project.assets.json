@@ -251,6 +251,34 @@
           "lib/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Routing/2.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.ObjectPool": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -646,6 +674,48 @@
           }
         }
       },
+      "NetDevPack.Security.JwtSigningCredentials/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "3.1.6",
+          "Microsoft.IdentityModel.Tokens": "6.7.1",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/NetDevPack.Security.JwtSigningCredentials.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/NetDevPack.Security.JwtSigningCredentials.dll": {}
+        }
+      },
+      "NetDevPack.Security.JwtSigningCredentials.AspNetCore/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Routing": "2.2.2",
+          "Microsoft.Extensions.Caching.Abstractions": "3.1.6",
+          "NetDevPack.Security.JwtSigningCredentials": "1.0.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/NetDevPack.Security.JwtSigningCredentials.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/NetDevPack.Security.JwtSigningCredentials.AspNetCore.dll": {}
+        }
+      },
+      "NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.6",
+          "NetDevPack.Security.JwtSigningCredentials": "1.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.1/NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/5.6.3": {
         "type": "package",
         "dependencies": {
@@ -855,6 +925,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/4.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       }
     }
@@ -1112,6 +1191,34 @@
         "lib/netstandard2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml",
         "microsoft.aspnetcore.identity.entityframeworkcore.5.0.0.nupkg.sha512",
         "microsoft.aspnetcore.identity.entityframeworkcore.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Routing/2.2.2": {
+      "sha512": "HcmJmmGYewdNZ6Vcrr5RkQbc/YWU4F79P3uPPBi6fCFOgUewXNM1P4kbPuoem7tN4f7x8mq7gTsm5QGohQ5g/w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.routing/2.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.dll",
+        "lib/netcoreapp2.2/Microsoft.AspNetCore.Routing.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.xml",
+        "microsoft.aspnetcore.routing.2.2.2.nupkg.sha512",
+        "microsoft.aspnetcore.routing.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
+      "sha512": "lRRaPN7jDlUCVCp9i0W+PB0trFaKB0bgMJD7hEJS9Uo4R9MXaMC8X2tJhPLmeVE3SGDdYI4QNKdVmhNvMJGgPQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.routing.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.xml",
+        "microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.routing.abstractions.nuspec"
       ]
     },
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
@@ -1744,6 +1851,42 @@
         "version.txt"
       ]
     },
+    "NetDevPack.Security.JwtSigningCredentials/1.0.3": {
+      "sha512": "bq1qchsvexxWMSMepO4O756pp8+4qGi7gxE0UhTA4mQK4KutXyKZJPYzxTaVs9s/EVpTU3Yyxjz2FaC7bcEHRg==",
+      "type": "package",
+      "path": "netdevpack.security.jwtsigningcredentials/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/NetDevPack.Security.JwtSigningCredentials.dll",
+        "netdevpack.security.jwtsigningcredentials.1.0.3.nupkg.sha512",
+        "netdevpack.security.jwtsigningcredentials.nuspec"
+      ]
+    },
+    "NetDevPack.Security.JwtSigningCredentials.AspNetCore/1.0.3": {
+      "sha512": "yolOlf8LVb4deRI5+m9ioBmqnpUphxMaRliOl9/7B27bPiPWiijoyieDC0NYjGTLLhy284Lp3H8gysrDwHIEFQ==",
+      "type": "package",
+      "path": "netdevpack.security.jwtsigningcredentials.aspnetcore/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/NetDevPack.Security.JwtSigningCredentials.AspNetCore.dll",
+        "netdevpack.security.jwtsigningcredentials.aspnetcore.1.0.3.nupkg.sha512",
+        "netdevpack.security.jwtsigningcredentials.aspnetcore.nuspec"
+      ]
+    },
+    "NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore/1.0.3": {
+      "sha512": "kyurKR08sgtnHhrbSftjhDhdTF6d31BukUIbNBgW9pT1ytNN8tMtRqlL1f0XLwLGXn3CoKXjtC84SCGaYNkWyA==",
+      "type": "package",
+      "path": "netdevpack.security.jwtsigningcredentials.store.entityframeworkcore/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore.dll",
+        "netdevpack.security.jwtsigningcredentials.store.entityframeworkcore.1.0.3.nupkg.sha512",
+        "netdevpack.security.jwtsigningcredentials.store.entityframeworkcore.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/5.6.3": {
       "sha512": "UkL9GU0mfaA+7RwYjEaBFvAzL8qNQhNqAeV5uaWUu/Z+fVgvK9FHkGCpTXBqSQeIHuZaIElzxnLDdIqGzuCnVg==",
       "type": "package",
@@ -2238,6 +2381,28 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Text.Json/4.7.2": {
+      "sha512": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+      "type": "package",
+      "path": "system.text.json/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.7.2.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -2248,6 +2413,8 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 5.0.0",
+      "NetDevPack.Security.JwtSigningCredentials.AspNetCore >= 1.0.3",
+      "NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore >= 1.0.3",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -2326,6 +2493,14 @@
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "NetDevPack.Security.JwtSigningCredentials.AspNetCore": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
+          "NetDevPack.Security.JwtSigningCredentials.Store.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

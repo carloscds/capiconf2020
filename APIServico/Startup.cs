@@ -1,17 +1,13 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Logging;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using NetDevPack.Security.JwtExtensions;
 using System.IdentityModel.Tokens.Jwt;
-using System.Text;
 
 namespace APIServico
 {
@@ -27,27 +23,21 @@ namespace APIServico
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var authorityUrl = "https://localhost:5001";
-            var key = Encoding.ASCII.GetBytes(Configuration["Configuration:Senha"]);
+            services.AddControllers();
+            var authorityUrl = "https://localhost:5001/jwks";
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            IdentityModelEventSource.ShowPII = true;
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(x =>
+                .AddJwtBearer(options =>
                 {
-                    x.RequireHttpsMetadata = false;
-                    x.SaveToken = true;
-                    x.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        NameClaimType = "name",
-                        RoleClaimType = "role",
-                        ValidateIssuer = false,
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(key),
-                        ValidateAudience = false
-                    };
+                    options.RequireHttpsMetadata = true;
+                    options.SaveToken = true;
+
+                    // API Authenticator Endpoint
+                    options.SetJwksOptions(new JwkOptions(authorityUrl));
                 });
 
             services.AddHttpContextAccessor();
-            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIServico", Version = "v1" });

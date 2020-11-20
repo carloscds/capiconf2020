@@ -35,3 +35,4 @@ D:\Eventos\CapiConfAPI\APIServico\obj\Debug\net5.0\API.Servico.dll
 D:\Eventos\CapiConfAPI\APIServico\obj\Debug\net5.0\ref\API.Servico.dll
 D:\Eventos\CapiConfAPI\APIServico\obj\Debug\net5.0\API.Servico.pdb
 D:\Eventos\CapiConfAPI\APIServico\obj\Debug\net5.0\API.Servico.genruntimeconfig.cache
+D:\Eventos\CapiConfAPI\APIServico\bin\Debug\net5.0\NetDevPack.Security.JwtExtensions.dll
