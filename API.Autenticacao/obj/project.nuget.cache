@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4EK2Ie1XJ50mWt6ES4eslg78QqgeH4e3be7Tn8V739pOhIPhm1Z3MY8ME4fG3LR8Gv5ICA5pvkbRH9ERizlSkA==",
+  "dgSpecHash": "2pIcbGpqRDD9m1cbCLp7ki70aJt4tCNkCN8JFwvt3BamqZhLV/Nc5jXnsKofcOhn1VmMPiPX9O/IomWtt6zTVg==",
   "success": true,
-  "projectFilePath": "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
+  "projectFilePath": "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cdsso\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\cdsso\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

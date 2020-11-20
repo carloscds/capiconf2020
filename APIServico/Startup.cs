@@ -24,17 +24,16 @@ namespace APIServico
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            var authorityUrl = "https://localhost:5001/jwks";
+            var authorityUrl = "http://localhost:5000";
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             IdentityModelEventSource.ShowPII = true;
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
-                    options.RequireHttpsMetadata = true;
+                    options.RequireHttpsMetadata = false;
                     options.SaveToken = true;
-
-                    // API Authenticator Endpoint
-                    options.SetJwksOptions(new JwkOptions(authorityUrl));
+                    options.Authority = authorityUrl;
+                    options.Audience = "api_servico";
                 });
 
             services.AddHttpContextAccessor();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {}
+    "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {}
   },
   "projects": {
-    "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {
+    "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
+        "projectUniqueName": "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
         "projectName": "API.Autenticacao",
-        "projectPath": "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
+        "projectPath": "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\API.Autenticacao.csproj",
         "packagesPath": "C:\\Users\\cdsso\\.nuget\\packages\\",
-        "outputPath": "D:\\eventos\\CapiConfAPI\\API.Autenticacao\\obj\\",
+        "outputPath": "D:\\Eventos\\CapiConfAPI\\API.Autenticacao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

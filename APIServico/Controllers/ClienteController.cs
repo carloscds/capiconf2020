@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Linq;
+using System.Text;
 
 namespace APIServico.Controllers
 {
@@ -26,8 +27,7 @@ namespace APIServico.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var user = _httpAcessor.HttpContext.User.Claims.FirstOrDefault(s => s.Type == "sub");
-            return Ok($"Autenticado user: {user.Value}");
+            return Ok(_httpAcessor.HttpContext.User.Claims.Select(s => new { s.Type, s.Value }));
         }
     }
 }
