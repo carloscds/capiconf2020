@@ -24,9 +24,8 @@ namespace APIServico
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            var authorityUrl = "http://localhost:5000";
+            var authorityUrl = "http://localhost:8080/auth/realms/master";
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
-            IdentityModelEventSource.ShowPII = true;
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
